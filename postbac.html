@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formations post-bac</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background-color: #1e3a8a; /* bleu foncé */
@@ -31,6 +35,50 @@
     nav a:hover {
       text-decoration: underline;
     }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    main img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #111827; /* gris foncé */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+    .contact-btn {
+      background-color: #2563eb;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 15px;
+      transition: background 0.3s;
+    }
+    .contact-btn:hover {
+      background-color: #1e40af;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5em;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #2563eb;
+    }
   </style>
 </head>
 <body>
@@ -43,7 +91,22 @@
     </nav>
   </header>
 
-    <footer>
+  <main>
+    <section id="cyber">
+      <h2>Cycle Cyber</h2>
+      <p>Présentation du cycle Cyber...</p>
+    </section>
+
+    <section id="info">
+      <h2>Cycle Info</h2>
+      <p>Présentation du cycle Informatique...</p>
+    </section>
+
+    <!-- Ajout de l'image -->
+    <img src="schema-des-etudes-isen-ouest-32.png" alt="Schéma des études ISEN Ouest">
+  </main>
+
+  <footer>
     <button class="contact-btn">Contacter nous</button>
     <div class="social-icons">
       <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
