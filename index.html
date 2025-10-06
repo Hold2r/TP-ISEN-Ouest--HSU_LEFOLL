@@ -118,6 +118,66 @@
       color: #e30613;
     }
 
+/* -------- BLOCK -------- */
+
+/* Conteneur global */
+.block-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Deux colonnes */
+.block-columns {
+	display: flex;
+	gap: 40px;
+	align-items: normal;
+}
+
+.FISA {
+	margin: 40px auto;
+	border: 2px solid #c8102e;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.FISA img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.Post-bac {
+	padding: 24px 30px;
+}
+.Post-bac h2 {
+	font-size: 200%;
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+.Post-bac p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+	margin-bottom: 16px;
+}
+.block-button {
+	margin: auto;
+	text-align: center;
+}
+.block-button a {
+	background-color: #e30613;
+	color: #fff;
+	display: inline-block;
+	padding: .5rem 2rem;
+	border-radius: 3.45rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+.block-button a:hover {
+	text-decoration: underline;
+}
+
+
+
 /* -------- FOOTER -------- */
     .site-footer {
       background: #000;
@@ -219,8 +279,45 @@
     </div>
   </section>
 
+<!-- BLOCK -->
+ 
 
- <!-- FOOTER_SIMPLE -->
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+
+<div class="block-container">
+  <div class="block-columns">
+	<section class="Post-bac">
+		<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formation">
+		<div class="Post-bac">
+		<h2>Formations post-bac</h2>
+			<p>
+			Chaque étudiant construit son propre parcours de formation sur 5 ans.
+			</p>
+			<p>
+			Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents. 
+			</p>
+			
+		</div>
+	</section>
+
+	<section class="FISA">
+		<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="FISA">
+		<div class="FISA">
+		<h2>Devenir ingénieur par alternance</h2>
+			<p>
+			Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.
+			</p>
+			
+		</div>
+	</section>
+
+
+
+
+</div></body>
+
+<!-- FOOTER_SIMPLE -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col footer-col-logo">
