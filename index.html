@@ -62,6 +62,62 @@
       text-decoration: underline;
     }
 
+/* -------- SECTION FORMATIONS (PLUGGIN IMAGES) -------- */
+    .section-formations {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .section-formations h1 {
+      font-size: 2.2em;
+      color: #e30613;
+      margin-bottom: 40px;
+    }
+
+    .formations-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .formation-card {
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .formation-card img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .formation-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .formation-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .formation-card a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    .formation-card a:hover {
+      color: #e30613;
+    }
+
 /* -------- FOOTER -------- */
     .site-footer {
       background: #000;
@@ -134,6 +190,35 @@
       </nav>
     </div>
   </header>
+
+<!-- PLUGGIN IMAGES -->
+  <section class="section-formations">
+    <h1>Nos formations ingénieurs</h1>
+
+    <div class="formations-grid">
+      <div class="formation-card">
+        <a href="https://isen-ouest.fr/formations/cycle-postbac/diplome-cybersecurite/">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cycle Cybersécurité">
+          Cybersécurité
+        </a>
+      </div>
+
+      <div class="formation-card">
+        <a href="https://isen-ouest.fr/formations/cycle-postbac/diplome-developpement-logiciel/">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement Logiciel">
+          Développement Logiciel
+        </a>
+      </div>
+
+      <div class="formation-card">
+        <a href="https://isen-ouest.fr/formations/cycle-postbac/diplome-intelligence-artificielle/">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence Artificielle">
+          Intelligence Artificielle
+        </a>
+      </div>
+    </div>
+  </section>
+
 
  <!-- FOOTER_SIMPLE -->
   <footer class="site-footer">
