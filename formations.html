@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ISEN - Exemple</title>
+  <title>Nos Formations Ingénieurs – ISEN Ouest</title>
   <style>
     html {
       font-family: "Open Sans", sans-serif;
@@ -62,6 +62,62 @@
       text-decoration: underline;
     }
 
+    /* -------- SECTION FORMATIONS (PLUGGIN IMAGES) -------- */
+    .section-formations {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .section-formations h1 {
+      font-size: 2.2em;
+      color: #e30613;
+      margin-bottom: 40px;
+    }
+
+    .formations-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .formation-card {
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .formation-card img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .formation-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .formation-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .formation-card a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    .formation-card a:hover {
+      color: #e30613;
+    }
+
     /* -------- FOOTER -------- */
     .site-footer {
       background: #000;
@@ -92,21 +148,6 @@
       margin-top: 30px;
     }
 
-    .btn-contact {
-      display: block;
-      padding: 10px 20px;
-      background: #c8102e;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 25px;
-      margin: auto;
-    }
-
-    .btn-contact:hover {
-      background: #a00b23;
-    }
-
     .footer-links-section {
       flex: 3;
       display: flex;
@@ -120,42 +161,6 @@
       margin-bottom: 20px;
     }
 
-    .footer-links-container {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .footer-col {
-      width: 25%;
-    }
-
-    .footer-col h3 {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .footer-col ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .footer-col li {
-      margin-bottom: 8px;
-    }
-
-    .footer-col a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .footer-col a:hover {
-      text-decoration: underline;
-    }
-
     .footer-bottom {
       text-align: center;
       padding-top: 15px;
@@ -163,11 +168,27 @@
       color: black;
       font-size: 14px;
     }
+
+    /* -------- RESPONSIVE -------- */
+    @media (max-width: 768px) {
+      .formations-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-nav ul {
+        flex-direction: column;
+      }
+
+      .header-nav li {
+        flex: none;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER_SIMPLE -->
   <header class="header-isen">
     <div class="header-container">
       <a href="/" class="header-logo">
@@ -176,22 +197,46 @@
 
       <nav class="header-nav">
         <ul>
-          <li><a href="#">Liens à venir</a></li>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Formations</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Contacts</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- CONTENU PRINCIPAL (à remplacer) -->
-  <main style="padding: 50px; text-align:center;">
-    <h1>Bienvenue sur le site ISEN</h1>
-    <p>Contenu à venir...</p>
-  </main>
+  <!-- PLUGGIN IMAGES -->
+  <section class="section-formations">
+    <h1>Nos formations ingénieurs</h1>
 
-  <!-- FOOTER -->
+    <div class="formations-grid">
+      <div class="formation-card">
+        <a href="https://isen-ouest.fr/formations/cycle-postbac/diplome-cybersecurite/">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cycle Cybersécurité">
+          Cybersécurité
+        </a>
+      </div>
+
+      <div class="formation-card">
+        <a href="https://isen-ouest.fr/formations/cycle-postbac/diplome-developpement-logiciel/">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement Logiciel">
+          Développement Logiciel
+        </a>
+      </div>
+
+      <div class="formation-card">
+        <a href="https://isen-ouest.fr/formations/cycle-postbac/diplome-intelligence-artificielle/">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence Artificielle">
+          Intelligence Artificielle
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER_SIMPLE -->
   <footer class="site-footer">
     <div class="footer-container">
-
       <div class="footer-col footer-col-logo">
         <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
              alt="ISEN Ouest" class="footer-logo">
@@ -200,7 +245,6 @@
       <div class="footer-links-section">
         <p class="footer-cities">Texte à venir</p>
       </div>
-
     </div>
   </footer>
 
