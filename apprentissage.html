@@ -62,6 +62,48 @@
       text-decoration: underline;
     }
 
+/* -------- SECTION TEXTE + IMAGE -------- */
+    .section-text-img {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .section-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .section-text h2 {
+      font-size: 2em;
+      color: #e30613;
+      margin-bottom: 15px;
+    }
+
+    .section-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .section-img {
+      flex: 1;
+      text-align: center;
+      min-width: 300px;
+    }
+
+    .section-img img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+
 /* -------- FOOTER -------- */
     .site-footer {
       background: #000;
@@ -135,6 +177,21 @@
   </header>
 </div></body>
 
+<!-- PLUGGIN TEXT_IMG -->
+  <section class="section-text-img">
+    <div class="section-text">
+      <h2>Ingénieur par l’apprentissage</h2>
+      <p>Le cycle ingénieur correspond aux trois dernières années de la formation d’ingénieur. Sous statut apprenti, ces trois années sont réalisées en apprentissage au sein d’une entreprise d’accueil.</p>
+
+      <p>Tout au long de cette formation, vous alternez les périodes à l’école et les périodes en entreprises en montant progressivement en compétence. Ces périodes durent environ 6 semaines lors des deux premières années, puis 6 mois la dernière année. Ces rythmes d’alternance permettent aux étudiants de travailler avec des entreprises sur tout le territoire français.</p>
+    </div>
+
+    <div class="section-img">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/11/08/shema-cycle-inge-12-1320x752.png" 
+           alt="Schéma Cycle">
+    </div>
+  </section>
+
 <!-- FOOTER_SIMPLE -->
   <footer class="site-footer">
     <div class="footer-container">
@@ -153,5 +210,5 @@
     &copy; 2025 ISEN Ouest — Tous droits réservés
   </div>
 
-
+</body>
 </html>
